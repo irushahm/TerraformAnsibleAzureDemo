@@ -1,0 +1,16 @@
+- hosts: Web
+  become: true
+  tasks:
+    - name: Update package lists
+      apt:
+        update_cache: yes
+
+    - name: Install Apache package
+      apt:
+        name: apache2
+        state: present
+
+    - name: Copy web content (replace with your content)
+      copy:
+        content: "<h1>Welcome again Irusha Malalgoda!</h1>"
+        dest: /var/www/html/index.html

@@ -1,0 +1,7 @@
+{
+  "webserver_vm_public_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "13.91.22.52"
+  }
+}
